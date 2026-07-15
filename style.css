@@ -290,16 +290,6 @@ a { text-decoration: none; color: inherit; }
 .tile__media--a { background: linear-gradient(135deg, #0a2a4d 0%, #0070d1 100%); }
 .tile__media--b { background: linear-gradient(135deg, #101014 0%, #004d8d 100%); }
 .tile__media--c { background: linear-gradient(135deg, #0070d1 0%, #101014 100%); }
-.tile__media--a::after,
-.tile__media--b::after,
-.tile__media--c::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(135deg,
-    rgba(255,255,255,0.05) 0 10px,
-    rgba(255,255,255,0) 10px 20px);
-}
 .tile__media { position: relative; }
 .tile__body { padding: var(--sp-lg); }
 .tile__body .body-sm { color: var(--body-dark); margin: var(--sp-xs) 0 0; }
