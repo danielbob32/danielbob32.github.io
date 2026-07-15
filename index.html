@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Daniel Bobritski — Robotics & Computer Vision Researcher</title>
-  <meta name="description" content="Daniel Bobritski — researcher in teleoperation, robotics, and computer vision at the University of Haifa." />
+  <meta name="description" content="Daniel Bobritski — direct-track PhD candidate in teleoperation, robotics, and computer vision at the University of Haifa, advised by Prof. Roi Poranne." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -20,6 +20,7 @@
       </a>
       <nav class="nav__links">
         <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -29,15 +30,19 @@
   <section class="hero band band--dark" id="top">
     <div class="band__inner hero__inner">
       <div class="hero__copy">
-        <p class="eyebrow">University of Haifa · Robotics &amp; Computer Vision</p>
+        <p class="eyebrow">Direct-track PhD Candidate · University of Haifa</p>
         <h1 class="display-xl">Daniel Bobritski</h1>
         <p class="lede">
           I build systems where humans and robots share control — bridging
           <strong>teleoperation</strong>, <strong>robotics</strong>, and
           <strong>computer vision</strong> to make machines that see, act, and cooperate.
         </p>
+        <p class="hero__meta">
+          Advised by
+          <a href="https://roipo.github.io/" target="_blank" rel="noopener">Prof. Roi Poranne</a>
+        </p>
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#research">Explore research</a>
+          <a class="btn btn--primary" href="#projects">View projects</a>
           <a class="btn btn--ghost-dark" href="https://github.com/danielbob32" target="_blank" rel="noopener">
             GitHub ↗
           </a>
@@ -60,7 +65,7 @@
       <div class="card-grid card-grid--3">
 
         <article class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">🕹️</div>
+          <span class="feature-card__tag">01</span>
           <h3 class="heading-md">Teleoperation</h3>
           <p class="body">
             Shared-autonomy and remote-control systems that let a human operator
@@ -69,7 +74,7 @@
         </article>
 
         <article class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">🤖</div>
+          <span class="feature-card__tag">02</span>
           <h3 class="heading-md">Robotics</h3>
           <p class="body">
             Manipulation, control, and perception-in-the-loop pipelines for
@@ -78,7 +83,7 @@
         </article>
 
         <article class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">👁️</div>
+          <span class="feature-card__tag">03</span>
           <h3 class="heading-md">Computer Vision</h3>
           <p class="body">
             Visual perception — pose estimation, tracking, and scene understanding —
@@ -90,14 +95,61 @@
     </div>
   </section>
 
-  <section class="band band--light band--about" id="about">
+  <section class="band band--dark" id="projects">
+    <div class="band__inner">
+      <h2 class="display-md">Selected projects</h2>
+      <p class="section-lede section-lede--dark">Systems I've built across XR, teleoperation, and robotics.</p>
+      <div class="card-grid card-grid--3">
+
+        <article class="tile">
+          <div class="tile__media tile__media--a"></div>
+          <div class="tile__body">
+            <span class="badge">XR · Teleoperation</span>
+            <h3 class="heading-md">CraftXRFleet</h3>
+            <p class="body-sm">
+              A framework for coordinating and teleoperating robots through
+              immersive XR interfaces.
+            </p>
+          </div>
+        </article>
+
+        <article class="tile">
+          <div class="tile__media tile__media--b"></div>
+          <div class="tile__body">
+            <span class="badge">Teleoperation</span>
+            <h3 class="heading-md">Quest 2 → Robot</h3>
+            <p class="body-sm">
+              A Python pipeline that streams Meta Quest 2 headset and controller
+              tracking into real-time robot commands.
+            </p>
+          </div>
+        </article>
+
+        <article class="tile">
+          <div class="tile__media tile__media--c"></div>
+          <div class="tile__body">
+            <span class="badge">Robotics</span>
+            <h3 class="heading-md">UR5 Manipulation</h3>
+            <p class="body-sm">
+              Vision-guided control and manipulation on a Universal Robots UR5
+              arm in real-world settings.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--light" id="about">
     <div class="band__inner prose">
       <h2 class="display-md">About</h2>
       <p class="body">
-        I'm a researcher in the Department of Computer Science at the
-        <strong>University of Haifa</strong>, working at the intersection of
-        teleoperation, robotics, and computer vision. My work centers on
-        building robotic systems that pair visual perception with
+        I'm a direct-track PhD candidate in the Department of Computer Science at the
+        <strong>University of Haifa</strong>, advised by
+        <a class="link" href="https://roipo.github.io/" target="_blank" rel="noopener">Prof. Roi Poranne</a>.
+        My work sits at the intersection of teleoperation, robotics, and computer
+        vision — building robotic systems that pair visual perception with
         human-in-the-loop control.
       </p>
       <p class="body">
@@ -113,12 +165,13 @@
 
   <footer class="band band--blue" id="contact">
     <div class="band__inner footer__inner">
-      <div>
+      <div class="footer__lead">
         <h2 class="display-md">Get in touch</h2>
         <p class="lede lede--blue">Open to collaboration, questions, and new projects.</p>
+        <a class="btn btn--light" href="mailto:danielbob32@gmail.com">Email me ↗</a>
       </div>
       <ul class="footer__links">
-        <li><a href="mailto:danielbob32@gmail.com">Email</a></li>
+        <li><a href="mailto:danielbob32@gmail.com">danielbob32@gmail.com</a></li>
         <li><a href="https://github.com/danielbob32" target="_blank" rel="noopener">GitHub</a></li>
         <li><a href="https://scholar.google.com/citations?user=VzCFeO8AAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
         <li><a href="https://orcid.org/0009-0004-2851-0851" target="_blank" rel="noopener">ORCID</a></li>
