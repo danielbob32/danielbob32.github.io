@@ -38,7 +38,7 @@
           <strong>computer vision</strong> to make machines that see, act, and cooperate.
         </p>
         <p class="hero__meta">
-          Advised by
+          Supervised by
           <a href="https://roipo.github.io/" target="_blank" rel="noopener">Prof. Roi Poranne</a>
         </p>
         <div class="hero__cta">
@@ -102,9 +102,26 @@
       <div class="card-grid card-grid--3">
 
         <article class="tile">
-          <div class="tile__media tile__media--a"></div>
+          <div class="tile__media tile__media--a">
+            <video class="tile__video" autoplay muted loop playsinline preload="metadata"
+                   poster="assets/teleop-poster.jpg">
+              <source src="assets/teleop-ur5e.mp4" type="video/mp4" />
+            </video>
+          </div>
           <div class="tile__body">
-            <span class="badge">XR · Teleoperation</span>
+            <span class="badge">Teleoperation</span>
+            <h3 class="heading-md">Remote-Body Teleoperation</h3>
+            <p class="body-sm">
+              Teleoperating a UR5e robot arm through a Meta Quest 2 headset — the
+              operator perceives and acts from an embodied remote viewpoint.
+            </p>
+          </div>
+        </article>
+
+        <article class="tile">
+          <div class="tile__media tile__media--b"></div>
+          <div class="tile__body">
+            <span class="badge">XR · Robotics</span>
             <h3 class="heading-md">CraftXRFleet</h3>
             <p class="body-sm">
               A framework for coordinating and teleoperating robots through
@@ -113,29 +130,20 @@
           </div>
         </article>
 
-        <article class="tile">
-          <div class="tile__media tile__media--b"></div>
+        <a class="tile" href="https://github.com/danielbob32/ParkingSpace" target="_blank" rel="noopener">
+          <div class="tile__media">
+            <img src="assets/parking.png" alt="Parking-space detection probability map"
+                 onerror="this.style.display='none';this.parentElement.classList.add('tile__media--c');" />
+          </div>
           <div class="tile__body">
-            <span class="badge">Teleoperation</span>
-            <h3 class="heading-md">Quest 2 → Robot</h3>
+            <span class="badge">Computer Vision</span>
+            <h3 class="heading-md">ParkingSpace ↗</h3>
             <p class="body-sm">
-              A Python pipeline that streams Meta Quest 2 headset and controller
-              tracking into real-time robot commands.
+              A YOLOv11-based parking-detection system that finds free spaces from
+              a live RTSP camera feed.
             </p>
           </div>
-        </article>
-
-        <article class="tile">
-          <div class="tile__media tile__media--c"></div>
-          <div class="tile__body">
-            <span class="badge">Robotics</span>
-            <h3 class="heading-md">UR5 Manipulation</h3>
-            <p class="body-sm">
-              Vision-guided control and manipulation on a Universal Robots UR5
-              arm in real-world settings.
-            </p>
-          </div>
-        </article>
+        </a>
 
       </div>
     </div>
@@ -146,19 +154,11 @@
       <h2 class="display-md">About</h2>
       <p class="body">
         I'm a direct-track PhD candidate in the Department of Computer Science at the
-        <strong>University of Haifa</strong>, advised by
+        <strong>University of Haifa</strong>, supervised by
         <a class="link" href="https://roipo.github.io/" target="_blank" rel="noopener">Prof. Roi Poranne</a>.
         My work sits at the intersection of teleoperation, robotics, and computer
         vision — building robotic systems that pair visual perception with
         human-in-the-loop control.
-      </p>
-      <p class="body">
-        You can find my publications on
-        <a class="link" href="https://scholar.google.com/citations?user=VzCFeO8AAAAJ" target="_blank" rel="noopener">Google Scholar</a>,
-        my code on
-        <a class="link" href="https://github.com/danielbob32" target="_blank" rel="noopener">GitHub</a>,
-        and my record on
-        <a class="link" href="https://orcid.org/0009-0004-2851-0851" target="_blank" rel="noopener">ORCID</a>.
       </p>
     </div>
   </section>
