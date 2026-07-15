@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Bobritski — Robotics & Computer Vision Researcher</title>
+  <meta name="description" content="Daniel Bobritski — researcher in teleoperation, robotics, and computer vision at the University of Haifa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top">
+        <span class="nav__monogram">DB</span>
+        <span class="nav__name">Daniel Bobritski</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#research">Research</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero band band--dark" id="top">
+    <div class="band__inner hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">University of Haifa · Robotics &amp; Computer Vision</p>
+        <h1 class="display-xl">Daniel Bobritski</h1>
+        <p class="lede">
+          I build systems where humans and robots share control — bridging
+          <strong>teleoperation</strong>, <strong>robotics</strong>, and
+          <strong>computer vision</strong> to make machines that see, act, and cooperate.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#research">Explore research</a>
+          <a class="btn btn--ghost-dark" href="https://github.com/danielbob32" target="_blank" rel="noopener">
+            GitHub ↗
+          </a>
+        </div>
+      </div>
+      <div class="hero__portrait">
+        <div class="portrait">
+          <img src="assets/portrait.jpg" alt="Portrait of Daniel Bobritski"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="portrait__fallback">DB</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--light" id="research">
+    <div class="band__inner">
+      <h2 class="display-md">Research interests</h2>
+      <p class="section-lede">The threads that run through my work.</p>
+      <div class="card-grid card-grid--3">
+
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">🕹️</div>
+          <h3 class="heading-md">Teleoperation</h3>
+          <p class="body">
+            Shared-autonomy and remote-control systems that let a human operator
+            command a robot fluidly across distance and latency.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">🤖</div>
+          <h3 class="heading-md">Robotics</h3>
+          <p class="body">
+            Manipulation, control, and perception-in-the-loop pipelines for
+            robots operating in unstructured, real-world environments.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">👁️</div>
+          <h3 class="heading-md">Computer Vision</h3>
+          <p class="body">
+            Visual perception — pose estimation, tracking, and scene understanding —
+            that turns raw camera data into decisions robots can act on.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--light band--about" id="about">
+    <div class="band__inner prose">
+      <h2 class="display-md">About</h2>
+      <p class="body">
+        I'm a researcher in the Department of Computer Science at the
+        <strong>University of Haifa</strong>, working at the intersection of
+        teleoperation, robotics, and computer vision. My work centers on
+        building robotic systems that pair visual perception with
+        human-in-the-loop control.
+      </p>
+      <p class="body">
+        You can find my publications on
+        <a class="link" href="https://scholar.google.com/citations?user=VzCFeO8AAAAJ" target="_blank" rel="noopener">Google Scholar</a>,
+        my code on
+        <a class="link" href="https://github.com/danielbob32" target="_blank" rel="noopener">GitHub</a>,
+        and my record on
+        <a class="link" href="https://orcid.org/0009-0004-2851-0851" target="_blank" rel="noopener">ORCID</a>.
+      </p>
+    </div>
+  </section>
+
+  <footer class="band band--blue" id="contact">
+    <div class="band__inner footer__inner">
+      <div>
+        <h2 class="display-md">Get in touch</h2>
+        <p class="lede lede--blue">Open to collaboration, questions, and new projects.</p>
+      </div>
+      <ul class="footer__links">
+        <li><a href="mailto:danielbob32@gmail.com">Email</a></li>
+        <li><a href="https://github.com/danielbob32" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://scholar.google.com/citations?user=VzCFeO8AAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://orcid.org/0009-0004-2851-0851" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a href="https://www.linkedin.com/in/danielbobritski/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="footer__fine">
+      <span>© <span id="year"></span> Daniel Bobritski</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
