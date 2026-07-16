@@ -1,5 +1,5 @@
 /* ============================================================
-   Daniel Bobritski — personal researcher site
+   Daniel Bobritski - personal researcher site
    ============================================================ */
 
 :root {
@@ -65,7 +65,7 @@ img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
 
 /* ============================================================
-   TYPOGRAPHY  (display tier at weight 300 — the brand voice)
+   TYPOGRAPHY  (display tier at weight 300 - the brand voice)
    ============================================================ */
 .display-xl {
   font-size: clamp(2rem, 6vw, 54px);
